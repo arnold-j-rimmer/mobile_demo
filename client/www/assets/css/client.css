@@ -1,0 +1,27 @@
+/*
+@font-face {
+	font-family: 'bcn';
+	src: url('../fonts/bcn.eot');
+	src: url('../fonts/bcn.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bcn.woff2') format('woff2'),
+		url('../fonts/bcn.woff') format('woff'),
+		url('../fonts/bcn.ttf') format('truetype'),
+		url('../fonts/bcn.svg#bcn') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+body {
+	font-family: 'Ubuntu Condensed', 'Open Sans Condensed', 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+	background-color: #77f;
+	color: white;
+}
+
+.backdrop {
+	background-color: rgba(0,0,0,0.4);
+}
+

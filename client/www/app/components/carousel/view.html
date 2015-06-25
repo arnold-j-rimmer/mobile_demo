@@ -1,0 +1,15 @@
+
+<div data-ng-controller="carouselController">
+	<div style="height: 305px">
+		<carousel interval="switchInterval">
+			<slide data-ng-repeat="slide in slides" active="slide.active">
+				<img data-ng-src="{{slide.image}}" style="margin:auto;" data-ng-swipe-left="next();" data-ng-swipe-right="prev();">
+				<div class="carousel-caption">
+					<h4>Slide {{$index}}</h4>
+					<p>{{slide.text}}</p>
+				</div>
+			</slide>
+		</carousel>
+	</div>
+</div>
+
