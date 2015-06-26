@@ -148,6 +148,7 @@ section#slider {
 	background-size: 85% auto;
 }
 
-.item-cat > span {
+.item-cat-quiz {
+	background-image: url(./assets/images/icons/quiz.png);
 }
 
