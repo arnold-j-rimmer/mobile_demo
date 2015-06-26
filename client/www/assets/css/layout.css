@@ -76,10 +76,6 @@ header {
 }
 
 main, side-menu {
-	overflow: hidden;
-}
-
-main:hover, side-menu:hover {
 	overflow-y: auto;
 }
 
