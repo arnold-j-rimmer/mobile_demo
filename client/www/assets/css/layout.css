@@ -20,8 +20,7 @@ button::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submi
 
 .clearfix:before, .clearfix:after,
 .cnr:before, .cnr:after,
-.row:before, .row:after,
-#content:before, #content:after {
+.row:before, .row:after {
 	content: '\0020';
 	display: block;
 	overflow: hidden;
@@ -30,11 +29,11 @@ button::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submi
 	height: 0;
 }
 
-.clearfix:after, .cnr:after, .row:after, #content:after {
+.clearfix:after, .cnr:after, .row:after {
 	clear: both;
 }
 
-.clearfix, .cnr, .row, #content {
+.clearfix, .cnr, .row {
 	zoom: 1;
 }
 
@@ -77,6 +76,10 @@ header {
 }
 
 main, side-menu {
+	overflow: hidden;
+}
+
+main:hover, side-menu:hover {
 	overflow-y: auto;
 }
 

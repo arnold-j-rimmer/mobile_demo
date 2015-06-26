@@ -1,13 +1,10 @@
 
 				<div class="side-menu-caller" data-ng-swipe-right="openSideMenu('left');" on-long-press="callerOnLongPress();" on-touch-end="callerOnTouchEnd();" data-ng-click="closeSideMenu();"></div>
-				<div class="side-menu-button">
-					<button class="btn btn-default" data-ng-click="openSideMenu('left');" type="button">
-						<span>Menu</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
+				<button class="side-menu-button" data-ng-click="openSideMenu('left');" type="button">
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+				</button>
 				<div class="backdrop" data-ng-click="closeSideMenu();"></div>
 				<div class="side-menu" data-ng-swipe-right="openSideMenu('left');" data-ng-swipe-left="closeSideMenu();">
 					<div class="container-fluid">
