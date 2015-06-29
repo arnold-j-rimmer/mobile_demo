@@ -11,23 +11,23 @@ ngApp.config(['$locationProvider', function($locationProvider){
 ngApp.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: './app/components/home/view.html',
+			templateUrl: '/app/components/home/view.html',
 			controller: 'homeController'
 		})
 		.when('/chat', {
-			templateUrl: './app/components/chat/view.html',
+			templateUrl: '/app/components/chat/view.html',
 			controller: 'chatController'
 		})
 		.when('/shop', {
-			templateUrl: './app/components/shop/view.html',
+			templateUrl: '/app/components/shop/view.html',
 			controller: 'shopController'
 		})
 		.when('shop/:itemId', {
-			templateUrl: './app/components/shop/item.html',
+			templateUrl: '/app/components/shop/item.html',
 			controller: 'shopItemController'
 		})
 		.when('/tickets', {
-			templateUrl: './app/components/tickets/view.html',
+			templateUrl: '/app/components/tickets/view.html',
 			controller: 'ticketsController'
 		})
 		.otherwise({
