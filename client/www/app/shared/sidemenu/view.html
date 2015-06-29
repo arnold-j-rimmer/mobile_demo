@@ -1,23 +1,33 @@
 
 				<div class="side-menu-caller" data-ng-swipe-right="openSideMenu('left');" on-long-press="callerOnLongPress();" on-touch-end="callerOnTouchEnd();" data-ng-click="closeSideMenu();"></div>
-				<button class="side-menu-button" data-ng-click="openSideMenu('left');" type="button">
+				<!--<button class="side-menu-button" data-ng-click="openSideMenu('left');" type="button">
 					<span class="icon-bar"> </span>
 					<span class="icon-bar"> </span>
 					<span class="icon-bar"> </span>
-				</button>
+				</button>-->
 				<div class="backdrop" data-ng-click="closeSideMenu();"></div>
 				<div class="side-menu" data-ng-swipe-right="openSideMenu('left');" data-ng-swipe-left="closeSideMenu();">
+					<div id="sidebar_header">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-12">
+									<h2>Project Name</h2>
+									<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-sm-12">
-								<h2>Project Name</h2>
-								<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-								<ul class="list-inline">
-									<li>Date: Project Date</li>
-									<li>Client: Client Name</li>
-									<li>Category: Client Category</li>
+								<ul class="nav nav-pills nav-stacked">
+									<li data-ng-class="{ active: isActiveNav('/')}"><a href="./">Home</a></li>
+									<li data-ng-class="{ active: isActiveNav('/chat')}"><a href="./chat">Chat</a></li>
+									<li data-ng-class="{ active: isActiveNav('/shop')}"><a href="./shop">Shop</a></li>
+									<li data-ng-class="{ active: isActiveNav('/tickets')}"><a href="./tickets">Tickets</a></li>
 								</ul>
+								<p> </p>
 								<button class="btn btn-primary" type="button" data-ng-click="closeSideMenu();"><i class="fa fa-times"></i> Close</button>
 							</div>
 						</div>

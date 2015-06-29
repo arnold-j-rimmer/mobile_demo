@@ -68,7 +68,6 @@ header, footer {
 }
 
 header {
-	height: 100px;
 }
 
 .content-top header {
@@ -90,17 +89,16 @@ main {
 
 .content-top main {
 	top: 0;
-	bottom: 80px;
+	bottom: 50px;
 }
 
 .content-bottom main {
-	top: 100px;
+	top: 80px;
 	bottom: 0;
 }
 
 footer {
 	bottom: 0;
-	height: 80px;
 }
 
 .content-bottom footer {
@@ -108,11 +106,11 @@ footer {
 }
 
 aside, .backdrop, .side-menu, .side-menu-caller, .side-menu-button {
-	z-index: 99;
+	z-index: 999;
 }
 
 .splash {
-	z-index: 999;
+	z-index: 99;
 	top: 0;
 	bottom: 0;
 	background-color: #77f;
@@ -278,9 +276,9 @@ aside.open .backdrop {
 }
 
 .side-menu-button {
-	position: fixed;
+	/*position: fixed;
 	left: 15px;
-	top: 30px;
+	top: 30px;*/
 }
 
 /* bootstrap additions */

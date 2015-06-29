@@ -1,22 +1,25 @@
 
-ngApp.controller('sidemenuController', ['$scope', function($scope, $sce){
-	$scope.sidemenu_init = 0;
-	$scope.sidemenu_open = 0;
-	$scope.sidemenu_side = 'left';
-	$scope.openSideMenu = function (side){
-		$scope.sidemenu_open = 1;
-		$scope.sidemenu_init = 0;
-		$scope.sidemenu_side = side;
+ngApp.controller('sidemenuController', function($scope, $rootScope, $location){
+	$rootScope.sidemenu_init = 0;
+	$rootScope.sidemenu_open = 0;
+	$rootScope.sidemenu_side = 'left';
+	$rootScope.openSideMenu = function(side){
+		$rootScope.sidemenu_open = 1;
+		$rootScope.sidemenu_init = 0;
+		$rootScope.sidemenu_side = side;
 	}
-	$scope.closeSideMenu = function () {
-		$scope.sidemenu_open = 0;
-		$scope.sidemenu_init = 0;
+	$rootScope.closeSideMenu = function() {
+		$rootScope.sidemenu_open = 0;
+		$rootScope.sidemenu_init = 0;
 	}
-	$scope.callerOnLongPress = function() {
-		$scope.sidemenu_init = 1;
+	$rootScope.isActiveNav = function(viewLocation) {
+		return viewLocation === $location.path();
 	}
-	$scope.callerOnTouchEnd = function() {
-		$scope.sidemenu_init = 0;
+	$rootScope.callerOnLongPress = function() {
+		$rootScope.sidemenu_init = 1;
 	}
-}]);
+	$rootScope.callerOnTouchEnd = function() {
+		$rootScope.sidemenu_init = 0;
+	}
+});
 

@@ -8,6 +8,8 @@
 		<meta name="description" content="open kinetix official website" />
 		<title>open kinetix :: official mobile app</title>
 
+<base href="/custom/mobile_demo/client/www/" />
+
 		<link rel="icon" href="./assets/images/favicon.ico" />
 		<link rel="shortcut icon" href="./assets/images/favicon.ico" />
 		<link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png" />
@@ -27,33 +29,17 @@
 
 	<body data-ng-controller="mainController">
 
-		<div class="main-wrapper content-bottom" data-ng-cloak>
-			<!-- nav -->
-			<!--<nav id="topnav" class="navbar navbar-default" data-ng-include="'./app/shared/nav/view.html'"></nav>-->
-			<!-- end nav -->
+		<div class="main-wrapper content-bottom" data-ng-cloak data-ng-view></div>
 
-			<!-- header -->
-			<header id="header" data-ng-include="'./app/shared/header/view.html'"></header>
-			<!-- end header -->
+		<div class="splash" data-ng-class="{ 'loading': include_loading || route_loading }"><h3>Loading</h3><span id="loader_percent">{{ loader_percent }} %</span><div class="spinner"><div></div><div></div><div></div></div></div>
 
-			<!-- content -->
-			<main id="content" data-ng-include="'./app/shared/content/view.html'"></main>
-			<!-- end content -->
+		<!-- radialmenu -->
+		<div class="radial-menu" id="radialmenu" data-ng-controller="radialmenuController" data-ng-include="'./app/shared/radialmenu/view.html'"></div>
+		<!-- end radialmenu -->
 
-			<!-- footer -->
-			<footer data-ng-include="'app/shared/footer/view.html'"></footer>
-			<!-- end footer -->
-
-			<!-- sidemenu -->
-			<aside class="{{ sidemenu_side }}" id="sidemenu" data-ng-class="{ 'open': sidemenu_open, 'init': sidemenu_init }" data-ng-controller="sidemenuController" data-ng-include="'./app/shared/sidemenu/view.html'"></aside>
-			<!-- end sidemenu -->
-
-			<!-- radialmenu -->
-			<div id="radialmenu" data-ng-controller="radialmenuController" data-ng-include="'./app/shared/radialmenu/view.html'"></div>
-			<!-- end radialmenu -->
-
-			<div class="splash" data-ng-class="{ 'loading': include_loading || route_loading }"><h3>Loading</h3><span id="loader_percent">{{ loader_percent }} %</span><div class="spinner"><div></div><div></div><div></div></div></div>
-		</div>
+		<!-- sidemenu -->
+		<aside class="{{ sidemenu_side }}" id="sidemenu" data-ng-class="{ 'open': sidemenu_open, 'init': sidemenu_init }" data-ng-controller="sidemenuController" data-ng-include="'./app/shared/sidemenu/view.html'"></aside>
+		<!-- end sidemenu -->
 
 		<!-- js -->
 		<!--<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>-->
@@ -67,8 +53,13 @@
 		<script type="text/javascript" src="./app/shared/sidemenu/controller.js"></script>
 		<script type="text/javascript" src="./app/shared/sidemenu/directive.js"></script>
 		<script type="text/javascript" src="./app/shared/radialmenu/controller.js"></script>
-		<script type="text/javascript" src="./app/components/carousel/controller.js"></script>
-		<script type="text/javascript" src="./app/components/news/controller.js"></script>
+		<script type="text/javascript" src="./app/shared/carousel/controller.js"></script>
+		<script type="text/javascript" src="./app/shared/news/controller.js"></script>
+
+		<script type="text/javascript" src="./app/components/home/controller.js"></script>
+		<script type="text/javascript" src="./app/components/chat/controller.js"></script>
+		<script type="text/javascript" src="./app/components/shop/controller.js"></script>
+		<script type="text/javascript" src="./app/components/tickets/controller.js"></script>
 		<!-- end js -->
 
 		<!-- tmp -->

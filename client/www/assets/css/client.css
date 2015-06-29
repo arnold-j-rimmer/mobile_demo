@@ -12,15 +12,18 @@
 }
 */
 
-body {
+body, .splash {
 	font-family: 'Ubuntu Condensed', 'Open Sans Condensed', 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #cef;
+}
+
+body, .splash {
 	background-color: #2863b1;
 	background: -webkit-linear-gradient(#0d4791, #2863b1);
 	background: -o-linear-gradient(#0d4791, #2863b1);
 	background: -moz-linear-gradient(#0d4791, #2863b1);
 	background: -ms-linear-gradient(#0d4791, #2863b1);
 	background: linear-gradient(#0d4791, #2863b1);
-	color: #cef;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -29,8 +32,13 @@ body {
 
 header {
 	color: #fff;
+}
+
+#logo {
 	background: url(../images/logo.png) transparent no-repeat 50% 50%;
-	background-size: auto 60%;
+	background-size: contain;
+	height: 50px;
+	margin: 15px 0;
 }
 
 .backdrop {
@@ -39,10 +47,12 @@ header {
 
 .side-menu-button {
 	width: 50px;
+	max-width: 100%;
 	background: none transparent;
 	border: 0 none;
-	border-radius: 3px;
+	border-radius: 0;
 	padding: 0;
+	margin-top: 25px;
 }
 
 .side-menu-button .icon-bar {
@@ -149,6 +159,6 @@ section#slider {
 }
 
 .item-cat-quiz {
-	background-image: url(./assets/images/icons/quiz.png);
+	/*background-image: url(./assets/images/icons/quiz.png);*/
 }
 

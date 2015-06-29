@@ -3,7 +3,7 @@
 
 #navs {
 	position: fixed;
-	z-index: 3;
+	z-index: 999;
 	left: 50%;
 	bottom: 0;
 	margin: 0 0 -10px -25px;
