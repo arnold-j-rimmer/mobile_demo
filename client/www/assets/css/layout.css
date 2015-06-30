@@ -267,6 +267,7 @@ aside.open .backdrop {
 	top: 0;
 	bottom: 0;
 	width: 30px;
+	z-index: 1;
 	/*background-color: rgba(255,0,0,0.4);*/
 }
 

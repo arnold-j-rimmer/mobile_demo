@@ -8,14 +8,14 @@
 		<meta name="description" content="open kinetix official website" />
 		<title>open kinetix :: official mobile app</title>
 
-<!--<base href="/custom/mobile_demo/client/www/" />-->
+		<base href="" />
 
-		<link rel="icon" href="/assets/images/favicon.ico" />
-		<link rel="shortcut icon" href="/assets/images/favicon.ico" />
-		<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+		<link rel="icon" href="assets/images/favicon.ico" />
+		<link rel="shortcut icon" href="assets/images/favicon.ico" />
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
 
 		<!-- css -->
-		<link rel="stylesheet" href="/assets/css/base.css" />
+		<link rel="stylesheet" href="assets/css/base.css" />
 		<!-- end css -->
 
 		<!-- fonts -->
@@ -31,35 +31,35 @@
 
 		<div class="main-wrapper content-bottom" data-ng-cloak data-ng-view></div>
 
-		<div class="splash" data-ng-class="{ 'loading': include_loading || route_loading }"><h3>Loading</h3><span id="loader_percent">{{ loader_percent }} %</span><div class="spinner"><div></div><div></div><div></div></div></div>
+		<div class="splash" data-ng-class="{ 'loading': dom_loading || include_loading || route_loading }"><h3>Loading</h3><span id="loader_percent">{{ loader_percent }} %</span><div class="spinner"><div></div><div></div><div></div></div></div>
 
 		<!-- radialmenu -->
-		<div class="radial-menu" id="radialmenu" data-ng-controller="radialmenuController" data-ng-include="'/app/shared/radialmenu/view.html'"></div>
+		<div class="radial-menu" id="radialmenu" data-ng-controller="radialmenuController" data-ng-include="'app/shared/radialmenu/view.html'"></div>
 		<!-- end radialmenu -->
 
 		<!-- sidemenu -->
-		<aside class="{{ sidemenu_side }}" id="sidemenu" data-ng-class="{ 'open': sidemenu_open, 'init': sidemenu_init }" data-ng-controller="sidemenuController" data-ng-include="'/app/shared/sidemenu/view.html'"></aside>
+		<aside class="{{ sidemenu_side }}" id="sidemenu" data-ng-class="{ 'open': sidemenu_open, 'init': sidemenu_init }" data-ng-controller="sidemenuController" data-ng-include="'app/shared/sidemenu/view.html'"></aside>
 		<!-- end sidemenu -->
 
 		<!-- js -->
-		<!--<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>-->
-		<script type="text/javascript" src="/bower_components/angular/angular.js"></script>
-		<script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
-		<script type="text/javascript" src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-		<script type="text/javascript" src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-		<script type="text/javascript" src="/bower_components/angular-touch/angular-touch.min.js"></script>
+		<!--<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>-->
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-touch/angular-touch.min.js"></script>
 
-		<script type="text/javascript" src="/app/shared/mainController.js"></script>
-		<script type="text/javascript" src="/app/shared/sidemenu/controller.js"></script>
-		<script type="text/javascript" src="/app/shared/sidemenu/directive.js"></script>
-		<script type="text/javascript" src="/app/shared/radialmenu/controller.js"></script>
-		<script type="text/javascript" src="/app/shared/carousel/controller.js"></script>
-		<script type="text/javascript" src="/app/shared/news/controller.js"></script>
+		<script type="text/javascript" src="app/shared/mainController.js"></script>
+		<script type="text/javascript" src="app/shared/sidemenu/controller.js"></script>
+		<script type="text/javascript" src="app/shared/sidemenu/directive.js"></script>
+		<script type="text/javascript" src="app/shared/radialmenu/controller.js"></script>
+		<script type="text/javascript" src="app/shared/carousel/controller.js"></script>
+		<script type="text/javascript" src="app/shared/news/controller.js"></script>
 
-		<script type="text/javascript" src="/app/components/home/controller.js"></script>
-		<script type="text/javascript" src="/app/components/chat/controller.js"></script>
-		<script type="text/javascript" src="/app/components/shop/controller.js"></script>
-		<script type="text/javascript" src="/app/components/tickets/controller.js"></script>
+		<script type="text/javascript" src="app/components/home/controller.js"></script>
+		<script type="text/javascript" src="app/components/chat/controller.js"></script>
+		<script type="text/javascript" src="app/components/shop/controller.js"></script>
+		<script type="text/javascript" src="app/components/tickets/controller.js"></script>
 		<!-- end js -->
 
 		<!-- tmp -->
