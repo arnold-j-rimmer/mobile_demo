@@ -570,44 +570,6 @@ table.dataList th.righted .down, table.dataList th.righted .up {
 	background-position: -7px 0;
 }
 
-/* icons */
-
-[class^="plain-"], [class*=" plain-"] {
-	outline: 0 none;
-	display: block;
-	display: inline-block;
-	text-decoration: none;
-	background-image: url(/images/sprite_icons.png);
-	background-repeat: no-repeat;
-	width: 32px;
-	height: 24px;
-	line-height: 24px;
-	font-size: 0px;
-	border-radius: 3px;
-	border: 1px solid #eee;
-	background-position: 8px 4px;
-}
-
-.plain-black {
-	background-image: url(/images/sprite_icons_white.png);
-	background-color: #222;
-	border-color: #222;
-}
-
-[class^="plain-"]:link, [class*=" plain-"]:link,
-[class^="plain-"]:visited, [class*=" plain-"]:visited,
-[class^="plain-"]:hover, [class*=" plain-"]:hover {
-	text-decoration: none;
-}
-
-.plain-src {
-	background-position: -40px 4px;
-}
-
-.plain-menu {
-	background-position: -328px -44px;
-}
-
 .row.row-narrow {
 	margin-left: -5px;
 	margin-right: -5px;

@@ -45,6 +45,19 @@ header {
 	background-color: rgba(0,0,0,0.4);
 }
 
+#sidebar_header {
+	height: 150px;
+	background: url(../images/backgrounds/menu-header.jpg) transparent no-repeat 50% 50%;
+	background-size: cover;
+	margin-bottom: 10px;
+}
+
+#sidebar_header .close, #sidebar_header .close:hover, #sidebar_header .close:focus {
+	color: #fff;
+	text-shadow: 0 -1px 0 #000;
+	font-size: 42px;
+}
+
 .side-menu-button {
 	width: 50px;
 	max-width: 100%;
@@ -128,6 +141,15 @@ section#slider {
 	margin: 0 2px;
 }
 
+.carousel-img {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
+}
+
 /* news list */
 
 #news .list {
@@ -142,23 +164,63 @@ section#slider {
 	background-color: #507db8;
 }
 
-#news .list img {
-	max-width: 100%;
-	height: auto;
+#news .list > li.shop {
+	background-color: #133b6c;
+}
+
+.item-img, .item-cat, .icon {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.item-cat, .icon {
+	display: block;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-size: 60% auto;
+}
+
+#news .list .item-img {
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
 }
 
 #news .list .item-cat {
-	float: right;
-	margin: 10% 0;
-	width: 80%;
-	padding-top: 60%;
 	border: 3px solid #fff;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 85% auto;
+	float: right;
+	margin: 20% 0;
+	width: 60%;
+	padding-top: 60%;
 }
 
-.item-cat-quiz {
-	/*background-image: url(./assets/images/icons/quiz.png);*/
+.item-cat-info, .icon-info {
+	background-image: url(../images/icons/info.png);
+}
+
+.item-cat-shop, .icon-basket {
+	background-image: url(../images/icons/basket.png);
+}
+
+.item-cat-profile, .icon-profile {
+	background-image: url(../images/icons/profile.png);
+}
+
+.item-cat-reward, .icon-reward {
+	background-image: url(../images/icons/reward.png);
+}
+
+.item-cat-tip, .icon-tip {
+	background-image: url(../images/icons/tip.png);
+}
+
+.item-cat-quiz, .icon-quiz {
+	background-image: url(../images/icons/quiz.png);
+}
+
+.item-cat-checkin, .item-cat-checkin-stadium, .icon-pin {
+	background-image: url(../images/icons/pin.png);
 }
 

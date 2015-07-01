@@ -2,10 +2,16 @@
 <div data-ng-controller="carouselController">
 	<carousel interval="switchInterval">
 		<slide data-ng-repeat="slide in slides" active="slide.active">
-			<img data-ng-src="{{slide.image}}" style="margin:auto;" data-ng-swipe-left="next();" data-ng-swipe-right="prev();">
-			<div class="carousel-caption">
-				<h4>{{slide.title}}</h4>
-				<p>{{slide.text}}</p>
+			<div class="row" data-ng-swipe-left="next();" data-ng-swipe-right="prev();">
+				<div class="col-xs-3">
+					<div class="carousel-img" style="background-image: url('{{slide.image}}');"></div>
+				</div>
+				<div class="col-xs-9">
+					<div class="carousel-caption">
+						<h4>{{slide.title}}</h4>
+						<p>{{slide.text}}</p>
+					</div>
+				</div>
 			</div>
 		</slide>
 	</carousel>

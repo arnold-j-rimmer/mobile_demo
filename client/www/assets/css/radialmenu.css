@@ -1,4 +1,14 @@
-#radialmenu {
+#radialmenu .backdrop {
+	display: none;
+}
+
+#radialmenu.active .backdrop {
+	display: block;
+	background-color: rgba(0,0,0,0.01);
+}
+
+aside.open .backdrop {
+	display: block;
 }
 
 #navs {
@@ -6,10 +16,10 @@
 	z-index: 999;
 	left: 50%;
 	bottom: 0;
-	margin: 0 0 -10px -25px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
+	margin: 0 0 -60px -60px;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
 	list-style-type: none;
 	padding: 0;
 	text-align: center;
@@ -17,7 +27,7 @@
 	cursor: pointer;
 }
 
-#navs.active {
+.active > #navs {
 	bottom: 10px;
 	width: 60px;
 	height: 60px;
@@ -36,6 +46,10 @@
 	background-color: #e3242c;
 }
 
+#navs > li.active {
+	background-color: #9f1b21;
+}
+
 #navs, #navs:after, #navs > li {
 	transition: all .4s;
 	-webkit-transition: all .4s;
@@ -43,13 +57,13 @@
 }
 
 #navs:after {
-	content: attr(data-close);
+	content: '';/*attr(data-close);*/
 	z-index: 1;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 }
 
-#navs.active:after {
+.active > #navs:after {
 	content: attr(data-open);
 	-ms-transform: rotate(720deg);
 	-webkit-transform: rotate(720deg);
@@ -65,5 +79,21 @@
 	text-decoration: none;
 	color: #fff;
 	font-size: 0.8em;
+}
+
+#navs:after, .active > #navs > li {
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#navs:after {
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: 50% auto;
+	background-image: url(../images/icons/play.png);
+}
+
+.active > #navs:after {
+	background-position: 50% 50%;
+	background-size: 80% auto;
 }
 

@@ -3,14 +3,14 @@
 		<div class="row">
 			<div class="col-sm-12 item">
 				<ul class="list">
-					<li class="animate-repeat" data-ng-repeat="item in items">
+					<li class="animate-repeat {{ item.cat }}" data-ng-repeat="item in items">
 						<div class="row">
-							<div class="col-xs-3"><img src="{{ item.image }}" alt="" /></div>
+							<div class="col-xs-3"><div class="item-img" style="background-image: url('{{ item.image }}');"></div></div>
 							<div class="col-xs-6">
 								<h4>{{ item.title }}</h4>
 								<p ng-bind-html="item.body"></p>
 							</div>
-							<div class="col-xs-3"><div class="item-cat item-cat-{{ item.cat }}"></div></div>
+							<div class="col-xs-3 item-cat-holder"><div class="item-cat item-cat-{{ item.cat }}"></div></div>
 						</div>
 					</li>
 				</ul>
