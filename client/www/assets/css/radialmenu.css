@@ -50,7 +50,7 @@ aside.open .backdrop {
 	background-color: #9f1b21;
 }
 
-#navs, #navs:after, #navs > li {
+#navs, #navs:after, #navs > li, #navs > li > a, #navs > li > a > span {
 	transition: all .4s;
 	-webkit-transition: all .4s;
 	-moz-transition: .4s;
@@ -64,7 +64,7 @@ aside.open .backdrop {
 }
 
 .active > #navs:after {
-	content: attr(data-open);
+	content: ''; /*attr(data-open);*/
 	-ms-transform: rotate(720deg);
 	-webkit-transform: rotate(720deg);
 	transform: rotate(720deg);
