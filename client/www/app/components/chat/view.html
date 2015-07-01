@@ -11,6 +11,10 @@
 						<div class="col-sm-12">
 							<h4>Chat</h4>
 							<p>Coming soon..</p>
+							<form ng-submit="sendMessage()">
+							  <input type="text" placeholder="User Name" ng-model="userName"></input>
+							  <button type="submit">Connect</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -20,4 +24,3 @@
 			<!-- footer -->
 			<footer data-ng-include="'app/shared/footer/view.html'"></footer>
 			<!-- end footer -->
-
