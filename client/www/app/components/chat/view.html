@@ -9,11 +9,10 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-12">
-							<h4>Chat</h4>
-							<p>Coming soon..</p>
+							<h4>Chat Page</h4>
+							<ul id="messages"></ul>
 							<form ng-submit="sendMessage()">
-							  <input type="text" placeholder="User Name" ng-model="userName"></input>
-							  <button type="submit">Connect</button>
+							  <input ng-model="chatMessage" autocomplete="off" /><button>Send</button>
 							</form>
 						</div>
 					</div>
